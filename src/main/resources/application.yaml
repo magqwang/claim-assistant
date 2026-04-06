@@ -1,0 +1,17 @@
+spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/invoice_app
+#    username: postgres
+#    password: yourpassword
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+server:
+  port: 8081
